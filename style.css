@@ -1,3 +1,49 @@
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Header section */
+.top-container{
+    height: 677px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2D25A0;
+}
+.top-details{
+    width: 485px;
+    height: 230px;
+    margin-right: 102px;
+}
+.top-info{
+    margin-bottom: 27px;
+}
+.top-info h1{
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: #fff;
+}
+.top-button a{
+    color: #fff;
+    width: 168px;
+    height: 44px;
+    text-decoration: none;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.extra-margin{
+    margin-left: 10px;
+    text-align: center;
+}
+.top-banner{
+    margin-top: 49px;
+}
+.top-banner img{
+    width: 556.01px;
+    height: 438px;
 }
