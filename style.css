@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     background-color: #2D25A0;
+    margin-bottom: 70px;
 }
 .top-details{
     width: 485px;
@@ -46,4 +47,41 @@
 .top-banner img{
     width: 556.01px;
     height: 438px;
+}
+/* Header section end */
+main{
+    margin-left: 180px;
+    margin-right: 210px;
+}
+.players-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.players{
+    width: 330px;
+    height: 455px;
+    padding: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-image img{
+    width: 330px;
+    height: 256px;
+}
+.player-details{
+    width: 300px;
+    height: 154px;
+    margin-top: 16px;
+}
+.player-details h2{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 26px;
+}
+.player-details p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
 }
