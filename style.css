@@ -55,12 +55,15 @@
     height: 438px;
 }
 /* Top section end */
+
+/* Main Section start */
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+/* Player section */
 .players-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -93,8 +96,9 @@ main{
     line-height: 26px;
     font-weight: 400;
 }
+/* Player section end */
 
-/* News section */
+/* News section start*/
 .latest-news-container{
     margin-top: 40px;
     margin-bottom: 30px;
@@ -184,10 +188,13 @@ main{
     font-weight: 300;
     color: rgba(255, 0, 0, 0.411);
 }
+/* Discount section done */
+/* Main section complete */
 
-/* Footer section */
+/* Footer section start*/
 footer{
     margin-top: 70px;
+    margin-bottom: 50px;
 }
 .logo-section{
     display: flex;
@@ -226,6 +233,7 @@ footer{
     line-height: 24px;
     width: 236px;
 }
+/* Footer section end */
 
 /* Media query */
 @media (max-width: 692px) {
