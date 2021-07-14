@@ -5,7 +5,7 @@
 }
 /* Header section */
 .top-container{
-    height: 677px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,8 +50,12 @@
 }
 /* Header section end */
 main{
-    margin-left: 180px;
-    margin-right: 210px;
+    /* margin-left: 180px;
+    margin-right: 210px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .players-container{
     display: grid;
@@ -78,10 +82,127 @@ main{
 .player-details h2{
     margin-bottom: 10px;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 22px;
 }
 .player-details p{
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
+}
+
+/* News section */
+.latest-news-container{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.news-title, .shop-title{
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.news-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 26px;
+    cursor: pointer;
+}
+.news{
+    width: 358px;
+    height: 455px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+}
+.news-thumbnail img{
+    width: 358px;
+    height: 256px;
+}
+.news-info{
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.news-info h3{
+    color: tomato;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.news-info h4{
+    padding: 5px 0;
+    color: rgba(145, 138, 138, 0.39);
+}
+.news-info p{
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 300;
+}
+/* News section done */
+
+/* Discount section start */
+.discount-section-container{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+.productlist{
+    width: 330px;
+    height: 310px;
+    padding: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.product-thumbnail img{
+    width: 330px;
+    height: 200px;
+    border-radius: 10px;
+}
+.discount-details h3{
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.discount-details a{
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 300;
+    color: rgba(255, 0, 0, 0.411);
+}
+
+/* Footer section */
+footer{
+    margin-top: 70px;
+}
+.logo-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    margin-bottom: 15px;
+}
+.logo img{
+    width: 483px;
+    height: 110px;
+}
+.social-icon{
+    margin-bottom: 10px;
+}
+.rounded-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+.fa{
+    padding: 10px;
+}
+.copyright p{
+    font-size: 18px;
+    line-height: 24px;
+    width: 236px;
 }
