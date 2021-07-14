@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-/* Header section */
+/* Top section Start*/
 .top-container{
     width: 100%;
     height: 677px;
@@ -29,6 +29,7 @@
 }
 .button a{
     width: 120px;
+    height: 44px;
     text-decoration: none;
     color: #fff;
     font-weight: 500;
@@ -36,7 +37,7 @@
     padding: 12px 24px;
     background-color: #E02C6D;
     box-shadow: inset 0 0 0 0 #fff;
-    transition: ease-in-out 0.4s;
+    transition: ease-in-out 1s;
 }
 .button a:hover{
     box-shadow: inset 168px 0 0 0 #fff;
@@ -53,10 +54,8 @@
     width: 556.01px;
     height: 438px;
 }
-/* Header section end */
+/* Top section end */
 main{
-    /* margin-left: 180px;
-    margin-right: 210px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,7 +108,6 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 26px;
-    cursor: pointer;
 }
 .news{
     width: 330px;
@@ -117,6 +115,15 @@ main{
     padding: 14px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.171);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.news:hover .news-thumbnail img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.news-thumbnail{
+    overflow: hidden;
 }
 .news-thumbnail img{
     width: 330px;
@@ -198,9 +205,11 @@ footer{
 .social-icon{
     margin-bottom: 10px;
 }
-.rounded-icon{
-    width: 40px;
-    height: 40px;
+.rounded-icon i{
+    /* width: 20px;
+    height: 20px;
+    margin: 0 auto; */
+    padding: 16px;
     border-radius: 50%;
     background-color: whitesmoke;
 }
@@ -217,7 +226,9 @@ footer{
 @media (max-width: 692px) {
     .top-container{
         display: block;
-        padding-top: 70px;
+        padding-top: 40px;
+        width: 360px;
+        height: 600px;
     }
     .top-details{
         width: 278px;
@@ -239,6 +250,9 @@ footer{
     }
     .players-container, .news-container, .product-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .players, .productlist, .news{
+        margin: 0 14px;
     }
     .news-container, .product-container{
         grid-row-gap: 27px;
