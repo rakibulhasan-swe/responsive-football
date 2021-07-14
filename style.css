@@ -51,7 +51,7 @@
     color: #fff;
 }
 .top-banner{
-    margin-top: 49px;
+    margin-top: 55px;
 }
 .top-banner img{
     width: 556.01px;
@@ -219,8 +219,29 @@ footer{
 
 /* Media query */
 @media (max-width: 692px) {
-    .top-container, footer{
+    .button-section{
         display: none;
+    }
+    .top-container{
+        display: block;
+    }
+    .top-details{
+        width: 278px;
+        height: 138px;
+        margin-left: 16px;
+    }
+    .top-info h1{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .top-banner{
+        margin-top: 120px;
+        margin-left: 16px;
+    }
+    .top-banner img{
+        width: 329px;
+        height: 245px;
     }
     .players-container, .news-container, .product-container{
         grid-template-columns: repeat(1, 1fr);
@@ -229,6 +250,6 @@ footer{
         grid-row-gap: 27px;
     }
     .logo img{
-        width: 100%;
+        width: 95%;
     }
 }
