@@ -6,6 +6,7 @@
 /* Header section */
 .top-container{
     width: 100%;
+    height: 677px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,20 +27,28 @@
     line-height: 80px;
     color: #fff;
 }
-.top-button a{
-    color: #fff;
-    width: 168px;
-    height: 44px;
-    text-decoration: none;
+.button-section{
+    display: flex;
+    align-items: stretch;
+    width: 120px;
     padding: 10px 24px;
     background-color: #E02C6D;
+}
+.button a{
+    width: 80px;
+    color: #fff;
+    text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
 }
-.extra-margin{
-    margin-left: 10px;
-    text-align: center;
+.icon{
+    margin-left: 7px;
+}
+.fas{
+    width: 24px;
+    height: 24px;
+    color: #fff;
 }
 .top-banner{
     margin-top: 49px;
@@ -107,13 +116,14 @@ main{
     cursor: pointer;
 }
 .news{
-    width: 358px;
+    width: 330px;
     height: 455px;
+    padding: 14px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.171);
 }
 .news-thumbnail img{
-    width: 358px;
+    width: 330px;
     height: 256px;
 }
 .news-info{
@@ -205,4 +215,20 @@ footer{
     font-size: 18px;
     line-height: 24px;
     width: 236px;
+}
+
+/* Media query */
+@media (max-width: 692px) {
+    .top-container, footer{
+        display: none;
+    }
+    .players-container, .news-container, .product-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .news-container, .product-container{
+        grid-row-gap: 27px;
+    }
+    .logo img{
+        width: 100%;
+    }
 }
