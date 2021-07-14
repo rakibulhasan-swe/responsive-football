@@ -212,6 +212,11 @@ footer{
     padding: 16px;
     border-radius: 50%;
     background-color: whitesmoke;
+    color: black;
+}
+.rounded-icon i:hover{
+    background-color: rgba(255, 99, 71, 0.37);
+    color: blue;
 }
 .fa{
     padding: 10px;
@@ -250,9 +255,6 @@ footer{
     }
     .players-container, .news-container, .product-container{
         grid-template-columns: repeat(1, 1fr);
-    }
-    .players, .productlist, .news{
-        margin: 0 14px;
     }
     .news-container, .product-container{
         grid-row-gap: 27px;
