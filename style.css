@@ -236,7 +236,7 @@ footer{
 /* Footer section end */
 
 /* Media query */
-@media (max-width: 692px) {
+@media only screen and (max-width: 688px) {
     .top-container{
         display: block;
         padding-top: 40px;
